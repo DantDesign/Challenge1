@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;  font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-color: #e94b3cff;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    background: linear-gradient(0deg, #e94b3cff, rgb(192, 161, 198)70%)
+}
+
+main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    width: 40%;
+    height: 100%;
+}
+
+.section1{
+    width: 60%;
+}
+
+.area{
+    width: 80%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    resize: none;
+    font-size: 22px;
+    border: none;
+    text-transform: lowercase;
+}
+
+.area::placeholder{
+    padding: 3px 0 0 10px;
+}
+
+.boton-encriptar, .boton-desencriptar{
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer; background-color: #2d2926ff; color: white;
+}
+
+.box-botones{
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.box-botones p{
+    padding-bottom: 10px;
+}
+
+.section2{
+    width: 30%;
+    background-color: white;
+    border-radius: 25px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box-munieco{
+    width: 100%;
+    height: 60%;
+    padding-top: 130px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box-munieco img{
+    object-fit: cover;
+    width: 99%;
+}
+
+.box-h3{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.box-parrafo{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.box-resultado{
+    width: 100%;
+    height: 70%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.box-copiar{
+    width: 100%;
+    height: 20%;
+}
+
+.boton-copiar{
+    width: 35%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    cursor: pointer; background-color: #2d2926ff; color: white;
+}
+
+footer{
+    padding-left: 24%;
+}
+
+.ocultar{
+    display: none;
+}
+
+@media only screen{
+    .boton-encriptar, .boton-desencriptar, .boton-copiar {
+        min-width: 140px;
+    }
+}

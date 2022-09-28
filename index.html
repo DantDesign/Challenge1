@@ -1,0 +1,57 @@
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ENCRIPTADOR ALURA</title>
+        <link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <img src="images/Logo.png" alt="logo de alura">
+        </header>
+
+        <main>
+            <section class="section1">
+                <textarea class="area" placeholder="Ingrese el texto aqui" onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"></textarea>
+
+                <div class="box-botones">
+                    <p>&#9432; No se Permiten Mayúsculas, Tildes ó Caracteres Especiales</p>
+                    <input type="button" class="boton-encriptar" value="Encriptar">
+                    <input type="button" class="boton-desencriptar" value="Desencriptar">
+                </div>
+            </section>
+
+            <section class="section2">
+                <div class="box-munieco">
+                    <img src="images/Munieco.png" alt="dibujo">
+                </div>
+
+                <div class="box-h3">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                </div>
+
+                <div class="box-parrafo">
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                
+                <div class="box-resultado">
+                    <h3>Mensaje Encriptado:</h3>
+                    <p id="textoResultado" class="textoResultado"></p>
+                </div>
+
+                <div class="box-copiar">    
+                    <input type="button" class="boton-copiar" value="Copiar">
+                </div>
+            </section> 
+            
+        </main>
+
+        <footer>&#169; Dante Ezequiel Bringa</footer>
+
+        <script src="script.js"></script>
+
+</html>
